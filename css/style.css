@@ -180,9 +180,6 @@ legend {
 }
 
 /* НАВИГАЦИОННЫЕ КНОПКИ------------------------- */
-/* .navigation{
-    padding-top: 24px;
-} */
 .navigation__container{
     min-width: 100vw;
     vertical-align: middle;
