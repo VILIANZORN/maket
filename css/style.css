@@ -1,0 +1,394 @@
+/* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+
+@font-face {
+    font-family: "TT Lakes Regular";
+    src: url(/font/TTLakes/TTLakes-Regular.woff) format("woff");
+}
+@font-face {
+    font-family: "TT Lakes Bold";
+    src: url(/font/TTLakes/TTLakes-Bold.woff) format("woff");
+}
+@font-face {
+    font-family: "TT Lakes Medium";
+    src: url(/font/TTLakes/TTLakes-Medium.woff) format("woff");
+}
+
+
+
+/* HEADER CSS----------------------------------- */
+
+
+.header{
+    display: flex;  
+    justify-content: space-between;
+    margin-top: 9px;
+    padding: 24px 16px;
+    align-items: center;
+    border-bottom: 1px solid #D9FFF5;;
+}
+.menu__divider{
+    display: none;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16.73px;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.buttons__mobile{
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    vertical-align: middle;
+}
+.buttons__add{
+    display: none;
+}
+
+
+
+
+/* MAIN CSS----------------------------------- */
+
+
+.main{
+    background: #F8F8F8;
+    height: 100vh;
+}
+
+
+/* ЗАГОЛОВОК УСЛУГИ И СЕРВИС-------------------*/
+
+
+.main__head{
+    color: #1B1C21;
+    font-family: "TT Lakes Bold", "Arial", sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 142.857% */
+    letter-spacing: -0.6px;
+}
+.head{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 15px;
+    gap: 12px;
+}
+.head__img{
+    order: -1;
+}
+
+.desktop__buttons{
+    display: none;
+}
+
+/* НАВИГАЦИОННЫЕ КНОПКИ------------------------- */
+/* .navigation{
+    padding-top: 24px;
+} */
+.navigation__container{
+    min-width: 100vw;
+    vertical-align: middle;
+}
+.navigation__list{
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 24px 16px;
+}
+.navigation__list::-webkit-scrollbar {
+     width: 0;
+     height: 0;
+    }
+
+.navigation__link{
+    white-space: nowrap;
+    color: #7E7E82;
+    font-family: "TT Lakes Medium", "Arial", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; 
+    letter-spacing: -0.2px;
+    padding: 8px 9px 8px 16.5px;
+}
+.navigation__link_active{
+    border-radius: 6px;
+    border: 2px solid #B8FFEC;
+    background: #FFF;
+    /* width: 246px;
+    height: 40px; */
+    flex-shrink: 0;
+}
+
+
+
+/* СЕКСТИОН-------------------------------------- */
+
+
+.section{
+    padding: 16px;
+    padding-top: 0;
+}
+.section__image{
+    width: 100%;
+}
+.section__aside{
+    padding-top: 16px;
+}
+.section__p{
+    max-height: 90px;
+    color: #1B1C21;
+    font-family: "TT Lakes Regular", "Arial", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: 0.2px;
+    overflow-y: hidden;
+    margin: 0;
+    white-space: pre-wrap;
+}
+.section__button{
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+}
+.section__button::before{
+    display: block;
+    content: "";
+    background-image: url("/img/expand.svg");
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+}
+.section__button_style{
+    color: #1B1C21;
+    font-family: "TT Lakes Medium", "Arial", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px; 
+}
+
+@media (min-width: 768px) {
+
+    /* ХЕДЕР ------------- */
+    
+    .header{
+        padding: 24px;
+    }
+    .menu__divider{
+        display: block;
+        padding-left: 20px;
+        padding-right: 20.73px;
+    }
+    .buttons__add{
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        vertical-align: middle;    
+    }
+
+    /* МЕЙН------------- */
+    .head{
+        gap: 20px;
+    }
+    .navigation__list{
+        padding: 32px 24px;
+    }
+    .section{
+        display: flex;
+        gap: 48px;
+    }
+    .section__div{
+        display: flex;
+        flex-direction: column;
+        justify-content: top;
+        gap: 10px;
+    }
+    .section__button{
+        margin-top: 0;
+    }
+    .section__p{
+        min-height: 160px;
+        width: 312px;
+        white-space: pre-wrap;
+    }
+    .section__aside{
+        padding: 0;
+        width: 100%
+    }
+    .section__image{
+        max-width: 360px;
+        max-height: 259.655px; 
+        flex-shrink: 0;
+    }
+}
+
+@media (min-width: 1120px){
+    .header{
+        display: none;
+    }
+    .main__container{
+        padding: 42px 25px 0px 1px;
+    }
+    .main__head{
+        padding-top: 0;
+    }
+    .main__desktop{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .head{
+        gap: 30px;
+    }
+    .head__img{
+        width: 3px;
+        order: -1;
+    }    
+    .desktop__buttons{
+        display: flex;
+        align-items: center;
+        gap: 32px;    
+    }
+    .position-repair{
+        display: flex;
+        gap: 9px;
+        align-items: center;
+        text-decoration: none;       
+    }
+    .position-checkstatus{
+        display: flex;
+        gap: 9px;
+        align-items: center; 
+        text-decoration: none;
+    }
+    .desktop__buttons-text{
+        color: #1B1C21;
+        text-align: right;
+        font-family: "TT Lakes Middle", "Arial", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; /* 150% */
+        letter-spacing: -0.2px;
+    }
+    .navigation__list{
+        flex-wrap: wrap;
+        row-gap: 14.63px;
+        padding: 16.22px 35px;
+    }
+    .section__p{
+        min-height: 160px;
+        width: 490px;
+        white-space: pre-wrap;
+    }
+    .section__image{
+        max-width: 531.346px;
+        max-height: 383.241px;  
+    }
+    .section{
+        padding: 0px 0px 49px 35px;
+    }
+}
