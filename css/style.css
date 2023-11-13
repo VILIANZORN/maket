@@ -236,7 +236,11 @@ legend {
 .section__button::before{
     display: block;
     content: "";
+<<<<<<< HEAD
     background-image: url("expand.svg");
+=======
+    background-image: url(./img/expand.svg);
+>>>>>>> 7146cb81cca69290fea6fad85193aa1f03f0c54b
     background-repeat: no-repeat;
     width: 24px;
     height: 24px;
