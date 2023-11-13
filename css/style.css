@@ -91,15 +91,15 @@ legend {
 
 @font-face {
     font-family: "TT Lakes Regular";
-    src: url(font/TTLakes/TTLakes-Regular.woff) format("woff");
+    src: url(./../font/TTLakes/TTLakes-Regular.woff) format("woff");
 }
 @font-face {
     font-family: "TT Lakes Bold";
-    src: url(font/TTLakes/TTLakes-Bold.woff) format("woff");
+    src: url(./../font/TTLakes/TTLakes-Bold.woff) format("woff");
 }
 @font-face {
     font-family: "TT Lakes Medium";
-    src: url(font/TTLakes/TTLakes-Medium.woff) format("woff");
+    src: url(./../font/TTLakes/TTLakes-Medium.woff) format("woff");
 }
 
 
@@ -255,7 +255,7 @@ legend {
 .section__button::before{
     display: block;
     content: "";
-    background-image: url("img/expand.svg");
+    background-image: url("./../img/expand.svg");
     background-repeat: no-repeat;
     width: 24px;
     height: 24px;
