@@ -236,7 +236,7 @@ legend {
 .section__button::before{
     display: block;
     content: "";
-    background-image: url(img/expand.svg);
+    background-image: url(./img/expand.svg);
     background-repeat: no-repeat;
     width: 24px;
     height: 24px;
