@@ -88,22 +88,6 @@ legend {
 	display: block;
 }
 
-
-@font-face {
-    font-family: "TT Lakes Regular";
-    src: url(./../font/TTLakes/TTLakes-Regular.woff) format("woff");
-}
-@font-face {
-    font-family: "TT Lakes Bold";
-    src: url(./../font/TTLakes/TTLakes-Bold.woff) format("woff");
-}
-@font-face {
-    font-family: "TT Lakes Medium";
-    src: url(./../font/TTLakes/TTLakes-Medium.woff) format("woff");
-}
-
-
-
 /* HEADER CSS----------------------------------- */
 
 
@@ -157,7 +141,7 @@ legend {
 
 .main__head{
     color: #1B1C21;
-    font-family: "TT Lakes Bold", "Arial", sans-serif;
+    font-family: "TT Lakes", "Arial", sans-serif;
     font-size: 28px;
     font-style: normal;
     font-weight: 700;
@@ -199,7 +183,7 @@ legend {
 .navigation__link{
     white-space: nowrap;
     color: #7E7E82;
-    font-family: "TT Lakes Medium", "Arial", sans-serif;
+    font-family: "TT Lakes", "Arial", sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -234,7 +218,7 @@ legend {
 .section__p{
     max-height: 90px;
     color: #1B1C21;
-    font-family: "TT Lakes Regular", "Arial", sans-serif;
+    font-family: "TT Lakes", "Arial", sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -252,14 +236,14 @@ legend {
 .section__button::before{
     display: block;
     content: "";
-    background-image: url("./../img/expand.svg");
+    background-image: url(./img/expand.svg);
     background-repeat: no-repeat;
     width: 24px;
     height: 24px;
 }
 .section__button_style{
     color: #1B1C21;
-    font-family: "TT Lakes Medium", "Arial", sans-serif;
+    font-family: "TT Lakes", "Arial", sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -364,7 +348,7 @@ legend {
     .desktop__buttons-text{
         color: #1B1C21;
         text-align: right;
-        font-family: "TT Lakes Middle", "Arial", sans-serif;
+        font-family: "TT Lakes", "Arial", sans-serif;
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
