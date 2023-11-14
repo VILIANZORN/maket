@@ -110,6 +110,16 @@ legend {
     align-items: center;
     gap: 20px;
 }
+.menu__burger{
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0; 
+    border-radius: 20px;
+    background: #FF3E79;
+}
+.burger__icon{
+    padding-top: 1px;
+}
 .buttons{
     display: flex;
     align-items: center;
