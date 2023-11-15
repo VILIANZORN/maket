@@ -110,7 +110,7 @@ legend {
     align-items: center;
     gap: 20px;
 }
-.menu__style{
+.icon-style{
     width: 40px;
     height: 40px;
     flex-shrink: 0; 
@@ -177,8 +177,14 @@ legend {
     padding-top: 15px;
     gap: 12px;
 }
-.head__img{
-    order: -1;
+.head::before{
+    display: block;
+    content: "";
+    background-image: url(./../img/highlight.png);
+    background-repeat: no-repeat;
+    width: 4px;
+    height: 40px;
+    flex-shrink: 0;
 }
 
 .desktop__buttons{
@@ -209,7 +215,7 @@ legend {
     letter-spacing: -0.2px;
     padding: 8px 9px 8px 16.5px;
 }
-.navigation__link_active{
+.navigation__link-active{
     border-radius: 6px;
     border: 2px solid #B8FFEC;
     background: #FFF;
@@ -347,9 +353,8 @@ legend {
     .head{
         gap: 30px;
     }
-    .head__img{
-        width: 3px;
-        order: -1;
+    .head::before{
+        width: 3px; 
     }    
     .desktop__buttons{
         display: flex;
@@ -368,7 +373,7 @@ legend {
         align-items: center; 
         text-decoration: none;
     }
-    .menu__style-icon{
+    .icon-style__position{
         width: 16px;
         height: 20px;
         flex-shrink: 0;
