@@ -277,7 +277,7 @@ legend {
 /* БУРГЕР МЕНЮ ОТКРЫТ-------------- */
     .burger-menu{
         width: 320px;
-        height: 100vh;
+        height: 100%;
         box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
     }
     .burger-menu__close{
@@ -293,6 +293,10 @@ legend {
     }
 
     .burger-menu__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 100px;
         padding-top: 46px;
         padding-bottom: 32px;
         width: 222px;
@@ -342,7 +346,6 @@ legend {
         flex-shrink: 0;
     }
     .burger-menu__footer{
-        padding-top: 268px;
         padding-left: 24px;
     }
     .footer__menu{
