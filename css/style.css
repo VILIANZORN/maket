@@ -403,11 +403,8 @@ legend {
         justify-content: flex-start;
         gap: 7px;
         padding-top: 40px;
-        transition-duration: 0.5s;
-        transition-property: box-shadow;
-        transition-timing-function: ease;
     }
-    .lang-list{
+    .footer-lang-list__link{
         color: #1B1C21;
         font-family: TT Lakes;
         font-size: 16px;
@@ -416,11 +413,11 @@ legend {
         line-height: 24px; /* 150% */
         letter-spacing: -0.2px;
     }
-    .lang-list__active{
+    .footer-lang-list__active{
         color: #7E7E82;
         pointer-events: none;
     }
-    .lang-list>li>a:hover{
+    .footer-lang-list>li>a:hover{
         text-decoration: underline;
     }
 
