@@ -9,16 +9,16 @@
 </head>
 <body>
     <main>
-        <div class="burger-menu">
-            <div class="burger-menu__close">
+        <aside class="burger-menu">
+            <header class="burger-menu__cap">
                 <button class="icon-style">
                     <img src="./img/burger_close.svg" alt="Закрыть меню">
                 </button>
                 <img  src="./img/Group.svg" alt="логотип CSP">
-                <button class="icon-style burger-menu__close--right">
+                <button class="icon-style burger-menu__cap--right">
                     <img src="./img/search.svg" alt="Поиск">
                 </button>
-            </div>
+            </header>
             <div class="burger-menu__container">
                 <nav>
                     <ul class="burger-list">
@@ -48,30 +48,36 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="burger-menu__footer footer">
-                    <div class="footer__menu">
-                        <button class="icon-style icon-style__footer">
-                            <img class="footer__image" src="./img/call.svg" alt="звонок">
+                <footer class="burger-menu__footer">
+                    <div class="footer-menu">
+                        <button class="icon-style footer-menu__button">
+                            <img src="./img/call.svg" alt="звонок">
                         </button>   
-                        <button class="icon-style icon-style__footer">
-                            <img class="footer__image" src="./img/chat.svg" alt="чат">
+                        <button class="icon-style footer-menu__button">
+                            <img src="./img/chat.svg" alt="чат">
                         </button>   
-                        <button class="icon-style icon-style__footer">
-                            <img class="footer__image" src="./img/profile.svg" alt="профиль">
+                        <button class="icon-style footer-menu__button">
+                            <img src="./img/profile.svg" alt="профиль">
                         </button>       
                     </div>
-                    <div class="footer__info">
-                        <button class="burger-menu__footer--email">mail@cps.com</button>
-                        <button class="burger-menu__footer--number">8 800 890 8900</button>  
-                    </div>
-                    <div class="footer__lang lang">
-                        <a href="#">RU</a>
-                        <a href="#">EN</a>
-                        <a href="#">CH</a>
-                    </div>      
-                </div>
+                    <address class="footer-info">
+                        <a class="burger-menu__footer--email" href="mailto:mail@cps.com">mail@cps.com</a>
+                        <a class="burger-menu__footer--number" href="tel:8 800 890 8900">8 800 890 8900</a>  
+                    </address>
+                    <ul class="footer-lang-list lang-list">
+                        <li>
+                            <a class="lang-list__active" href="#">RU</a>
+                        </li>
+                        <li>
+                            <a href="#">EN</a>
+                        </li>
+                        <li>
+                            <a href="#">CH</a>
+                        </li>
+                    </ul>
+                </footer>
             </div>           
-        </div>
+        </aside>
     </main>
 </body>
 </html>

@@ -116,6 +116,9 @@ legend {
     flex-shrink: 0; 
     border-radius: 20px;
     background: #FF3E79;
+    transition-duration: 0.5s;
+    transition-property: opacity;
+    transition-timing-function: ease;
 }
 .burger__icon{
     position: relative;
@@ -280,7 +283,7 @@ legend {
         height: 100%;
         box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
     }
-    .burger-menu__close{
+    .burger-menu__cap{
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -288,7 +291,10 @@ legend {
         padding: 23px 24px;
         padding-bottom: 0;
     }
-    .burger-menu__close--right{
+    .icon-style:hover{
+        opacity: 0.5;
+    }
+    .burger-menu__cap--right{
         margin-left: auto;
     }
 
@@ -318,6 +324,7 @@ legend {
     }
     .burger-list__item--active{
         padding-left: 0px;
+        pointer-events: none;
     }
     .burger-list__link{
         color: #1B1C21;
@@ -348,22 +355,30 @@ legend {
     .burger-menu__footer{
         padding-left: 24px;
     }
-    .footer__menu{
+    .footer-menu{
         display:flex;
         justify-content: flex-start;
         gap: 16px;
         padding-bottom: 16px;
     }
-    .icon-style__footer{
+    .footer-menu__button{
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .footer__info{
+    .footer-info{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 12px;
+    }
+    .footer-info>a{
+        transition-duration: 0.5s;
+        transition-property: color;
+        transition-timing-function: ease;
+    }
+    .footer-info>a:hover{
+        color: #FF3E79;
     }
     .burger-menu__footer--email{
         color: #1B1C21;
@@ -383,13 +398,16 @@ legend {
         line-height: 32px; 
         letter-spacing: -0.6px;
     }
-    .footer__lang{
+    .footer-lang-list{
         display: flex;
         justify-content: flex-start;
         gap: 7px;
         padding-top: 40px;
+        transition-duration: 0.5s;
+        transition-property: box-shadow;
+        transition-timing-function: ease;
     }
-    .lang{
+    .lang-list{
         color: #1B1C21;
         font-family: TT Lakes;
         font-size: 16px;
@@ -397,6 +415,13 @@ legend {
         font-weight: 500;
         line-height: 24px; /* 150% */
         letter-spacing: -0.2px;
+    }
+    .lang-list__active{
+        color: #7E7E82;
+        pointer-events: none;
+    }
+    .lang-list>li>a:hover{
+        text-decoration: underline;
     }
 
 @media (min-width: 768px) {
