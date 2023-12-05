@@ -385,6 +385,7 @@
     /* ---СЛАЙДЕР---------------------------- */
 .main__title{
     padding: 16px;
+    background: linear-gradient(270deg, #FFF 0%, #F8F8F8 98.61%);
 }
 .main__title--text{
     color: #7E7E82;
