@@ -37,19 +37,38 @@ checker()
   })
 })
 
-const btn = document.querySelector(".show-button");
-const cards = document.querySelector(".image-slider__wrapper")
+// const btn = document.querySelector(".show-button");
+// const cards = document.querySelector(".image-slider__wrapper")
 
-btn.addEventListener('click',function(){
+// btn.addEventListener('click',function(){
+//   if (btn.innerHTML === "Показать всё") {
+//     btn.innerHTML = "Скрыть";
+//     cards.style.height = "auto";
+//     } else {
+//     btn.innerHTML = "Показать всё";
+//     cards.style.height = "160px";
+//     }
+// })
+const btn = document.querySelector(".show-button");
+const cards = document.querySelector(".image-slider__wrapper");
+
+btn.addEventListener('click', function () {
   if (btn.innerHTML === "Показать всё") {
     btn.innerHTML = "Скрыть";
     cards.style.height = "auto";
 
-    } else {
+    const style = document.createElement('style');
+    style.innerHTML = '.show-button::before { transform: rotate(180deg); }';
+    document.head.appendChild(style);
+  } else {
     btn.innerHTML = "Показать всё";
     cards.style.height = "160px";
-    }
-})
 
+    const style = document.querySelector('style');
+    if (style) {
+      document.head.removeChild(style);
+    }
+  }
+});
 
 
