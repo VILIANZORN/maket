@@ -43,7 +43,6 @@ btn.addEventListener('click', function () {
   if (btn.innerHTML === "Показать всё") {
     btn.innerHTML = "Скрыть";
     cards.style.height = "auto";
-
     const style = document.createElement('style');
     style.innerHTML = '.show-button::before { transform: rotate(180deg); }';
     document.head.appendChild(style);

@@ -474,6 +474,7 @@
     width: 24px;
     height: 24px;
     flex-shrink: 0;
+    transition: transform 1s ease;
 }
 .show-button--style{
     color: #1B1C21;
