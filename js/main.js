@@ -37,8 +37,9 @@ checker()
   })
 })
 
-const btn = document.querySelector(".swiper-button");
+const btn = document.querySelector(".show-button");
 const cards = document.querySelector(".image-slider__wrapper")
+const showBtn = document.querySelector('.show-button::before')
 
 btn.addEventListener('click',function(){
   if (btn.innerHTML === "Показать всё") {
