@@ -448,6 +448,7 @@
     height: 72px;
 }
 .image-slider__wrapper{
+    transition: height 1s ease-in-out;
     @media (min-width: 768px){
         display: flex;
         gap: 16px;

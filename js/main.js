@@ -42,13 +42,23 @@ const cards = document.querySelector(".image-slider__wrapper");
 btn.addEventListener('click', function () {
   if (btn.innerHTML === "Показать всё") {
     btn.innerHTML = "Скрыть";
-    cards.style.height = "auto";
+    cards.style.height = getComputedStyle(cards).height; 
+    cards.style.height = 'auto'; 
+    var fullHeight = getComputedStyle(cards).height; 
+    cards.style.height = ''; 
+    setTimeout(function() {
+      cards.style.height = fullHeight;
+    }, 0);
     const style = document.createElement('style');
     style.innerHTML = '.show-button::before { transform: rotate(180deg); }';
     document.head.appendChild(style);
   } else {
     btn.innerHTML = "Показать всё";
-    cards.style.height = "160px";
+    var fullHeight = getComputedStyle(cards).height; 
+    cards.style.height = fullHeight;
+    setTimeout(function() {
+      cards.style.height = '160px';
+    }, 0);
 
     const style = document.querySelector('style');
     if (style) {
@@ -56,5 +66,3 @@ btn.addEventListener('click', function () {
     }
   }
 });
-
-
