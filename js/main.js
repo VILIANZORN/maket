@@ -39,12 +39,12 @@ checker()
 
 const btn = document.querySelector(".show-button");
 const cards = document.querySelector(".image-slider__wrapper")
-const showBtn = document.querySelector('.show-button::before')
 
 btn.addEventListener('click',function(){
   if (btn.innerHTML === "Показать всё") {
     btn.innerHTML = "Скрыть";
     cards.style.height = "auto";
+
     } else {
     btn.innerHTML = "Показать всё";
     cards.style.height = "160px";
